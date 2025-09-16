@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Master Timetable 2024/2025 — Final</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Master Timetable — 2024/2025 Academic Year</h1>
+
+    <p id="timetable-desc" class="sr-only">
+      Weekly school timetable (Mon–Fri). Each day lists Year 7 to Year 11 across time slots from 8:00 to 16:00 plus an activity column. The 8:00–8:10 column is a single merged FORM TUTOR'S TIME block spanning all days and years.
+    </p>
+
+    <section class="timetable-wrapper" role="region" aria-labelledby="timetable-title">
+      <h2 id="timetable-title" class="sr-only">Weekly timetable grid</h2>
+
+      <!-- Grid: 15 columns, 26 rows (1 header + 25 content rows) -->
+      <div class="timetable" role="table" aria-describedby="timetable-desc">
+
+        <!-- Header row (row 1) -->
+        <div class="cell header corner" role="columnheader" style="grid-row:1; grid-column:1;">Day / Time</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:2;">Years</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:3;">8:00–8:10</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:4;">8:10–8:55</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:5;">9:00–9:45</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:6;">9:45–10:15</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:7;">10:15–11:00</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:8;">11:05–11:50</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:9;">11:55–12:40</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:10;">12:40–1:30</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:11;">1:30–2:15</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:12;">2:20–3:05</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:13;">3:10–3:55</div>
+        <div class="cell header" role="columnheader" style="grid-row:1; grid-column:14;">3:55–4:00</div>
+
+
+        <!-- ---------------- FORM TUTOR'S TIME: full 3rd column spanning row 2..27 ---------------- -->
+        <div class="cell form-tutor" style="grid-row:2 / 27; grid-column:3 / 4;" role="cell" aria-label="Form tutor's time">
+          FORM TUTOR'S TIME
+        </div>
+
+        <div class="cell form-tutor" style="grid-row:2 / 27; grid-column:14;" role="cell" aria-label="Form tutor's time">
+          FORM TUTOR'S TIME
+        </div>
+
+        <!-- ================= MONDAY (rows 2-6) ================= -->
+        <div class="cell row-header" role="rowheader" style="grid-row:2 / 7; grid-column:1;">MON</div>
+
+        <div class="cell year-label" style="grid-row:2; grid-column:2;">Yr. 7</div>
+        <div class="cell year-label" style="grid-row:3; grid-column:2;">Yr. 8</div>
+        <div class="cell year-label" style="grid-row:4; grid-column:2;">Yr. 9</div>
+        <div class="cell year-label" style="grid-row:5; grid-column:2;">Yr.10</div>
+        <div class="cell year-label" style="grid-row:6; grid-column:2;">Yr.11</div>
+
+        <!-- MON: 8:10-8:55 covered by FORM TUTOR'S TIME (col 3 merged) -->
+         <div class="cell tutor" style="grid-row:2 / 7; grid-column:4;">Devotion</div>
+        <!-- 9:00–9:45 (col5) -->
+        <div class="cell subject" style="grid-row:2; grid-column:5;">ICT 2</div>
+        <div class="cell subject" style="grid-row:3; grid-column:5;">MATH 11</div>
+        <div class="cell subject" style="grid-row:4; grid-column:5;">ENG 17</div>
+        <div class="cell subject" style="grid-row:5; grid-column:5;">ENG 7</div>
+        <div class="cell subject" style="grid-row:6; grid-column:5;">GEO 15 / FRE 5</div>
+
+         <!-- BREAK (9:45-10:15) spanning Yr7-Yr11 -->
+        <div class="cell break" style="grid-row:2 / 7; grid-column:6;">BREAK</div>
+
+        <!-- 10:15–11:00 (col7) -->
+        <div class="cell subject" style="grid-row:2; grid-column:7;">MATH 11</div>
+        <div class="cell subject" style="grid-row:3; grid-column:7;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:4; grid-column:7;">HIST 10</div>
+        <div class="cell subject" style="grid-row:5; grid-column:7;">L.S 14</div>
+        <div class="cell subject" style="grid-row:6; grid-column:7;">BIO 3</div>
+
+        <!-- 11:05–11:50 (col8) -->
+        <div class="cell subject" style="grid-row:2; grid-column:8;">ENG 17</div>
+        <div class="cell subject" style="grid-row:3; grid-column:8;">ART 18</div>
+        <div class="cell subject" style="grid-row:4; grid-column:8;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:5; grid-column:8;">L.S 14</div>
+        <div class="cell subject" style="grid-row:6; grid-column:8;">FRE / ICT 12</div>
+
+        <!-- 11:55–12:40 (col9) -->
+        <div class="cell subject" style="grid-row:2; grid-column:9;">P.E 13</div>
+        <div class="cell subject" style="grid-row:3; grid-column:9;">P.E 13</div>
+        <div class="cell subject" style="grid-row:4; grid-column:9;">SWA13 / FRE5 / CHI6</div>
+        <div class="cell subject" style="grid-row:5; grid-column:9;">MATH 4</div>
+        <div class="cell subject" style="grid-row:6; grid-column:9;">ENG 7</div>
+
+        <!-- LUNCH (12:40-1:30) spanning Yr7-Yr11 -->
+        <div class="cell lunch" style="grid-row:2 / 7; grid-column:10;">LUNCH</div>
+
+        <!-- Afternoon columns (col11-col13) -->
+        <div class="cell subject" style="grid-row:2; grid-column:11;">GEO 15</div>
+        <div class="cell subject" style="grid-row:3; grid-column:11;">ENG 17</div>
+        <div class="cell subject" style="grid-row:4; grid-column:11;">BUS 11</div>
+        <div class="cell subject" style="grid-row:5; grid-column:11;">BIO 19</div>
+        <div class="cell subject" style="grid-row:6; grid-column:11;">PHY 16</div>
+
+        <div class="cell subject" style="grid-row:2; grid-column:12;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:3; grid-column:12;">L.S 14</div>
+        <div class="cell subject" style="grid-row:4; grid-column:12;">MATH 4</div>
+        <div class="cell subject" style="grid-row:5; grid-column:12;">GEO 15</div>
+        <div class="cell subject" style="grid-row:6; grid-column:12;">SWA 13</div>
+
+        <div class="cell subject" style="grid-row:2; grid-column:13;">MUSIC 8</div>
+        <div class="cell subject" style="grid-row:3; grid-column:13;">L.S 14</div>
+        <div class="cell subject" style="grid-row:4; grid-column:13;">P.E 13</div>
+        <div class="cell subject" style="grid-row:5; grid-column:13;">HIST 10</div>
+        <div class="cell subject" style="grid-row:6; grid-column:13;">MATH 4</div>
+
+
+
+        <!-- ================= TUESDAY (rows 7-11) ================= -->
+        <div class="cell row-header" role="rowheader" style="grid-row:7 / 12; grid-column:1;">TUE</div>
+
+        <div class="cell year-label" style="grid-row:7; grid-column:2;">Yr. 7</div>
+        <div class="cell year-label" style="grid-row:8; grid-column:2;">Yr. 8</div>
+        <div class="cell year-label" style="grid-row:9; grid-column:2;">Yr. 9</div>
+        <div class="cell year-label" style="grid-row:10; grid-column:2;">Yr.10</div>
+        <div class="cell year-label" style="grid-row:11; grid-column:2;">Yr.11</div>
+
+        <!-- Note: col3 is occupied by FORM TUTOR'S TIME; no elements placed there for rows 7-26 -->
+
+        <!-- 8:10-8:55 (col4) -->
+        <div class="cell subject" style="grid-row:7; grid-column:4;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:8; grid-column:4;">MATH 11</div>
+        <div class="cell subject" style="grid-row:9; grid-column:4;">ENG 17</div>
+        <div class="cell subject" style="grid-row:10; grid-column:4;">MATH 4</div>
+        <div class="cell subject" style="grid-row:11; grid-column:4;">ENG 7</div>
+
+        <!-- 9:00-9:45 (col5) -->
+        <div class="cell subject" style="grid-row:7; grid-column:5;">LIB</div>
+        <div class="cell subject" style="grid-row:8; grid-column:5;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:9; grid-column:5;">SWA13 / FRE5 / CHI6</div>
+        <div class="cell subject" style="grid-row:10; grid-column:5;">ENG 7</div>
+        <div class="cell subject" style="grid-row:11; grid-column:5;">MATH 4</div>
+
+        <!-- BREAK (col6) spans rows 7-11 -->
+        <div class="cell break" style="grid-row:7 / 12; grid-column:6;">BREAK</div>
+
+        <!-- 10:15-11:00 (col7) -->
+        <div class="cell subject" style="grid-row:7; grid-column:7;">MATH 11</div>
+        <div class="cell subject" style="grid-row:8; grid-column:7;">ENG 17</div>
+        <div class="cell subject" style="grid-row:9; grid-column:7;">L.S 14</div>
+        <div class="cell subject" style="grid-row:10; grid-column:7;">HIST 10</div>
+        <div class="cell subject" style="grid-row:11; grid-column:7;">PHY 16</div>
+
+        <!-- 11:05-11:50 (col8) -->
+        <div class="cell subject" style="grid-row:7; grid-column:8;">ART 18</div>
+        <div class="cell subject" style="grid-row:8; grid-column:8;">GEO 15</div>
+        <div class="cell subject" style="grid-row:9; grid-column:8;">L.S 14</div>
+        <div class="cell subject" style="grid-row:10; grid-column:8;">CHEM 19</div>
+        <div class="cell subject" style="grid-row:11; grid-column:8;">GEO 15 / FRE 5</div>
+
+        <!-- 11:55–12:40 (col9) -->
+        <div class="cell subject" style="grid-row:7; grid-column:9;">P.E 13</div>
+        <div class="cell subject" style="grid-row:8; grid-column:9;">P.E 13</div>
+        <div class="cell subject" style="grid-row:9; grid-column:9;">MATH 4</div>
+        <div class="cell subject" style="grid-row:10; grid-column:9;">PHY 9</div>
+        <div class="cell subject" style="grid-row:11; grid-column:9;">HIST 10</div>
+
+        <!-- LUNCH col10 spans 7-11 -->
+        <div class="cell lunch" style="grid-row:7 / 12; grid-column:10;">LUNCH</div>
+        
+        <!-- Afternoon Tue (cols11-13) -->
+        <div class="cell subject" style="grid-row:7; grid-column:11;">ENG 17</div>
+        <div class="cell subject" style="grid-row:8; grid-column:11;">HIST 1</div>
+        <div class="cell subject" style="grid-row:9; grid-column:11;">P.E 13</div>
+        <div class="cell subject" style="grid-row:10; grid-column:11;">BUS15 / CHI6 / FRE5</div>
+        <div class="cell subject" style="grid-row:11; grid-column:11;">BUS 4</div>
+
+        <div class="cell subject" style="grid-row:7; grid-column:12;">HIST 1</div>
+        <div class="cell subject" style="grid-row:8; grid-column:12;">ICT 2</div>
+        <div class="cell subject" style="grid-row:9; grid-column:12;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:10; grid-column:12;">BUS15 / CHI6 / FRE5</div>
+        <div class="cell subject" style="grid-row:11; grid-column:12;">BUS 4</div>
+
+        <!-- TUE activity column (col13 / 14) -->
+        <div class="cell activity" style="grid-row:7 / 12; grid-column:13 / 14;">GENDER MEETING / DEBATE</div>
+
+
+
+        <!-- ================= WEDNESDAY (rows 12-16) ================= -->
+        <div class="cell row-header" role="rowheader" style="grid-row:12 / 17; grid-column:1;">WED</div>
+
+        <div class="cell year-label" style="grid-row:12; grid-column:2;">Yr. 7</div>
+        <div class="cell year-label" style="grid-row:13; grid-column:2;">Yr. 8</div>
+        <div class="cell year-label" style="grid-row:14; grid-column:2;">Yr. 9</div>
+        <div class="cell year-label" style="grid-row:15; grid-column:2;">Yr.10</div>
+        <div class="cell year-label" style="grid-row:16; grid-column:2;">Yr.11</div>
+
+        <!-- 8:10-8:55 (col4) -->
+        <div class="cell subject" style="grid-row:12; grid-column:4;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:13; grid-column:4;">MATH 11</div>
+        <div class="cell subject" style="grid-row:14; grid-column:4;">ENG 17</div>
+        <div class="cell subject" style="grid-row:15; grid-column:4;">ICT 2 / SWA 13</div>
+        <div class="cell subject" style="grid-row:16; grid-column:4;">BUS 4</div>
+
+        <!-- 9:00-9:45 (col5) -->
+        <div class="cell subject" style="grid-row:12; grid-column:5;">MATH 11</div>
+        <div class="cell subject" style="grid-row:13; grid-column:5;">ENG 17</div>
+        <div class="cell subject" style="grid-row:14; grid-column:5;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:15; grid-column:5;">ICT 2 / SWA 13</div>
+        <div class="cell subject" style="grid-row:16; grid-column:5;">ENG 7</div>
+
+        <!-- BREAK col6 for Wed rows12-16 -->
+        <div class="cell break" style="grid-row:12 / 17; grid-column:6;">BREAK</div>
+
+        <!-- 10:15-11:00 (col7) -->
+        <div class="cell subject" style="grid-row:12; grid-column:7;">GEO 15</div>
+        <div class="cell subject" style="grid-row:13; grid-column:7;">HIST 1</div>
+        <div class="cell subject" style="grid-row:14; grid-column:7;">ICT 2</div>
+        <div class="cell subject" style="grid-row:15; grid-column:7;">MATH 4</div>
+        <div class="cell subject" style="grid-row:16; grid-column:7;">CHEM 3</div>
+
+        <!-- 11:05-11:50 (col8) -->
+        <div class="cell subject" style="grid-row:12; grid-column:8;">ENG 17</div>
+        <div class="cell subject" style="grid-row:13; grid-column:8;">ART 18</div>
+        <div class="cell subject" style="grid-row:14; grid-column:8;">ICT 2</div>
+        <div class="cell subject" style="grid-row:15; grid-column:8;">PHY 9</div>
+        <div class="cell subject" style="grid-row:16; grid-column:8;">GEO 15</div>
+
+        <!-- 11:55–12:40 (col9) -->
+        <div class="cell subject" style="grid-row:12; grid-column:9;">P.E 13</div>
+        <div class="cell subject" style="grid-row:13; grid-column:9;">P.E 13</div>
+        <div class="cell subject" style="grid-row:14; grid-column:9;">GEO 15</div>
+        <div class="cell subject" style="grid-row:15; grid-column:9;">MATH 4</div>
+        <div class="cell subject" style="grid-row:16; grid-column:9;">MATH 4</div>
+
+        <!-- LUNCH col10 spans 12-16 -->
+        <div class="cell lunch" style="grid-row:12 / 17; grid-column:10;">LUNCH</div>
+
+        <!-- Afternoon Wed (cols11-13) -->
+        <div class="cell subject" style="grid-row:12; grid-column:11;">HIST 1</div>
+        <div class="cell subject" style="grid-row:13; grid-column:11;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:14; grid-column:11;">MATH 4</div>
+        <div class="cell subject" style="grid-row:15; grid-column:11;">BIO 19</div>
+        <div class="cell subject" style="grid-row:16; grid-column:11;">ICT 12</div>
+
+        <div class="cell subject" style="grid-row:12; grid-column:12;">ART 18</div>
+        <div class="cell subject" style="grid-row:13; grid-column:12;">MUSIC 8</div>
+        <div class="cell subject" style="grid-row:14; grid-column:12;">HIST 10</div>
+        <div class="cell subject" style="grid-row:15; grid-column:12;">GEO 15</div>
+        <div class="cell subject" style="grid-row:16; grid-column:12;">ICT 12</div>
+
+        <!-- Wed activity (col13 / 14) -->
+        <div class="cell activity" style="grid-row:12 / 17; grid-column:13 / 14;">CLUBS</div>
+
+
+
+
+        <!-- ================= THURSDAY (rows 17-21) ================= -->
+        <div class="cell row-header" role="rowheader" style="grid-row:17 / 22; grid-column:1;">THU</div>
+
+        <div class="cell year-label" style="grid-row:17; grid-column:2;">Yr. 7</div>
+        <div class="cell year-label" style="grid-row:18; grid-column:2;">Yr. 8</div>
+        <div class="cell year-label" style="grid-row:19; grid-column:2;">Yr. 9</div>
+        <div class="cell year-label" style="grid-row:20; grid-column:2;">Yr.10</div>
+        <div class="cell year-label" style="grid-row:21; grid-column:2;">Yr.11</div>
+
+        <!-- 8:10-8:55 col4 -->
+        <div class="cell subject" style="grid-row:17; grid-column:4;">MATH 11</div>
+        <div class="cell subject" style="grid-row:18; grid-column:4;">ENG 17</div>
+        <div class="cell subject" style="grid-row:19; grid-column:4;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:20; grid-column:4;">(ICT/MATH)</div>
+        <div class="cell subject" style="grid-row:21; grid-column:4;">ENG 7</div>
+
+        <!-- 9:00-9:45 col5 -->
+        <div class="cell subject" style="grid-row:17; grid-column:5;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:18; grid-column:5;">GEO 15</div>
+        <div class="cell subject" style="grid-row:19; grid-column:5;">HIST 10</div>
+        <div class="cell subject" style="grid-row:20; grid-column:5;">PHV Q</div>
+        <div class="cell subject" style="grid-row:21; grid-column:5;">CHEM 3</div>
+
+        <!-- BREAK col6 spanning 17-21 -->
+        <div class="cell break" style="grid-row:17 / 22; grid-column:6;">BREAK</div>
+
+        <!-- 10:15-11:00 (col7) -->
+        <div class="cell subject" style="grid-row:17; grid-column:7;">HIST 1</div>
+        <div class="cell subject" style="grid-row:18; grid-column:7;">GEO 15</div>
+        <div class="cell subject" style="grid-row:19; grid-column:7;">PHY 9</div>
+        <div class="cell subject" style="grid-row:20; grid-column:7;">CHEM 3</div>
+        <div class="cell subject" style="grid-row:21; grid-column:7;">CHEM 3</div>
+
+        <!-- 11:05-11:50 (col8) -->
+        <div class="cell subject" style="grid-row:17; grid-column:8;">ENG 17</div>
+        <div class="cell subject" style="grid-row:18; grid-column:8;">ICT 2</div>
+        <div class="cell subject" style="grid-row:19; grid-column:8;">MATH 4</div>
+        <div class="cell subject" style="grid-row:20; grid-column:8;">ENG 7</div>
+        <div class="cell subject" style="grid-row:21; grid-column:8;">PHY 16</div>
+
+        <!-- 11:55–12:40 (col9) -->
+        <div class="cell subject" style="grid-row:17; grid-column:9;">P.E 13</div>
+        <div class="cell subject" style="grid-row:18; grid-column:9;">MUSIC 9</div>
+        <div class="cell subject" style="grid-row:19; grid-column:9;">P.E 13</div>
+        <div class="cell subject" style="grid-row:20; grid-column:9;">PHV Q</div>
+        <div class="cell subject" style="grid-row:21; grid-column:9;">SWA 13</div>
+
+        <!-- LUNCH col10 -->
+        <div class="cell lunch" style="grid-row:17 / 22; grid-column:10;">LUNCH</div>
+
+        <!-- Afternoon Thu (cols11-13) -->
+        <div class="cell subject" style="grid-row:17; grid-column:11;">LS 14</div>
+        <div class="cell subject" style="grid-row:18; grid-column:11;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:19; grid-column:11;">GEO 15</div>
+        <div class="cell subject" style="grid-row:20; grid-column:11;">MATH 4</div>
+        <div class="cell subject" style="grid-row:21; grid-column:11;">SWA 13</div>
+
+        <div class="cell subject" style="grid-row:17; grid-column:12;">LS 14</div>
+        <div class="cell subject" style="grid-row:18; grid-column:12;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:19; grid-column:12;">BUS 11</div>
+        <div class="cell subject" style="grid-row:20; grid-column:12;">GEO 15</div>
+        <div class="cell subject" style="grid-row:21; grid-column:12;">SWA 13</div>
+
+        <div class="cell activity" style="grid-row:17 / 22; grid-column:13;">MIND LECTURE</div>
+        
+                
+
+
+
+        <!-- ================= FRIDAY (rows 22-26) ================= -->
+        <div class="cell row-header" role="rowheader" style="grid-row:22 / 27; grid-column:1;">FRI</div>
+
+        <div class="cell year-label" style="grid-row:22; grid-column:2;">Yr. 7</div>
+        <div class="cell year-label" style="grid-row:23; grid-column:2;">Yr. 8</div>
+        <div class="cell year-label" style="grid-row:24; grid-column:2;">Yr. 9</div>
+        <div class="cell year-label" style="grid-row:25; grid-column:2;">Yr.10</div>
+        <div class="cell year-label" style="grid-row:26; grid-column:2;">Yr.11</div>
+
+        <!-- 8:10-8:55 col4 -->
+        <div class="cell subject" style="grid-row:22; grid-column:4;">MATH 11</div>
+        <div class="cell subject" style="grid-row:23; grid-column:4;">ENG 17</div>
+        <div class="cell subject" style="grid-row:24; grid-column:4;">GEO 15</div>
+        <div class="cell subject" style="grid-row:25; grid-column:4;">ICT 2 / SWA 13</div>
+        <div class="cell subject" style="grid-row:26; grid-column:4;">BIO 3</div>
+
+        <!-- 9:00-9:45 col5 -->
+        <div class="cell subject" style="grid-row:22; grid-column:5;">ICT 2</div>
+        <div class="cell subject" style="grid-row:23; grid-column:5;">GEO 15</div>
+        <div class="cell subject" style="grid-row:24; grid-column:5;">MATH 4</div>
+        <div class="cell subject" style="grid-row:25; grid-column:5;">HIST 10</div>
+        <div class="cell subject" style="grid-row:26; grid-column:5;">ENG 7</div>
+
+        <!-- BREAK col6 (22-26) -->
+        <div class="cell break" style="grid-row:22 / 27; grid-column:6;">BREAK</div>
+
+        <!-- 10:15-11:00 col7 -->
+        <div class="cell subject" style="grid-row:22; grid-column:7;">ENG 17</div>
+        <div class="cell subject" style="grid-row:23; grid-column:7;">MATH 11</div>
+        <div class="cell subject" style="grid-row:24; grid-column:7;">ICT 2</div>
+        <div class="cell subject" style="grid-row:25; grid-column:7;">CHEM 19</div>
+        <div class="cell subject" style="grid-row:26; grid-column:7;">ENG 7</div>
+
+        <!-- 11:05-11:50 col8 -->
+        <div class="cell subject" style="grid-row:22; grid-column:8;">GEO 15 </div>
+        <div class="cell subject" style="grid-row:23; grid-column:8;">HIST 1</div>
+        <div class="cell subject" style="grid-row:24; grid-column:8;">ENG 17</div>
+        <div class="cell subject" style="grid-row:25; grid-column:8;">CHEM 19</div>
+        <div class="cell subject" style="grid-row:26; grid-column:8;">MATH 4</div>
+
+        <!-- 11:55-12:40 col9 -->
+        <div class="cell subject" style="grid-row:22; grid-column:9;">P.E 13</div>
+        <div class="cell subject" style="grid-row:23; grid-column:9;">P.E 13</div>
+        <div class="cell subject" style="grid-row:24; grid-column:9;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:25; grid-column:9;">ENG 7</div>
+        <div class="cell subject" style="grid-row:26; grid-column:9;">MATH 4</div>
+
+        <!-- 11:55–12:40 (col9) - LUNCH rows 22-27 -->
+        <div class="cell lunch" style="grid-row: 22 /27; grid-column:10;">LUNCH</div>
+
+        <!-- Afternoon Fri (cols11-13) -->
+        <div class="cell subject" style="grid-row:22; grid-column:11;">SCIENCE 9</div>
+        <div class="cell subject" style="grid-row:23; grid-column:11;">ICT 2</div>
+        <div class="cell subject" style="grid-row:24; grid-column:11;">BUS 11</div>
+        <div class="cell subject" style="grid-row:25; grid-column:11;">BUS15 / CHI6 / FRE5</div>
+        <div class="cell subject" style="grid-row:26; grid-column:11;">HIST 10</div>
+
+        <div class="cell subject" style="grid-row:22; grid-column:12;">MUSIC 8</div>
+        <div class="cell subject" style="grid-row:23; grid-column:12;">ICT 2</div>
+        <div class="cell subject" style="grid-row:24; grid-column:12;">SWA13 / FRE5 / CHI6</div>
+        <div class="cell subject" style="grid-row:25; grid-column:12;">BIO 19</div>
+        <div class="cell subject" style="grid-row:26; grid-column:12;">HIST 10</div>
+
+        <div class="cell activity" style="grid-row:22 / 27; grid-column:13;">GAMES</div>
+
+
+      </div> <!-- .timetable -->
+    </section>
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+/* styles.css - final explicitly-placed grid timetable */
+
+/* Reset + base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #f4f6f8;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+}
+main { width: 1280px; }
+
+/* screen-reader only */
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* wrapper */
+.timetable-wrapper {
+  background: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(20,24,30,0.06);
+  border: 1px solid #d7dbe0;
+  overflow: auto;
+}
+
+/* grid structure: 15 columns */
+.timetable {
+  display: grid;
+  grid-template-columns:
+    70px  /* day header vertical */
+    70px  /* year label */
+    70px  /* 8:00-8:10 (merged with form-tutor) */
+    160px /* 8:10-8:55 */
+    120px /* 9:00-9:45 */
+    80px  /* 9:45-10:15 (break) */
+    120px /* 10:15-11:00 */
+    120px /* 11:05-11:50 */
+    120px /* 11:55-12:40 */
+    100px /* 12:40-1:30 lunch */
+    120px /* 1:30-2:15 */
+    120px /* 2:20-3:05 */
+    120px /* 3:10-3:55 */
+    60px  /* 3:55-4:00 */
+    140px;/* activity column */
+  grid-auto-rows: 56px;
+  gap: 0;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.1;
+}
+
+/* cell basics */
+.cell {
+  border: 1px solid #bfc7cf;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  word-break: break-word;
+  background: #fff;
+}
+
+/* header cells */
+.header {
+  background: #e9eef6;
+  font-weight: 700;
+}
+
+/* corner label */
+.corner { font-weight: 800; }
+
+/* vertical day header */
+.row-header {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  background: #f0f3f7;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+/* year label */
+.year-label { background: #fbfdff; font-weight:700; }
+
+/* semantic classes */
+.subject { background:#fff; color:#111; font-weight:600; }
+.tutor { background: #eef2ff; color: #033; font-weight:700; }
+.break { background:#fff3cd; color:#6b4f00; font-weight:700; }
+.lunch { background:#dfeef0; font-weight:700; color:#033; }
+.activity { background:#f7f7fb; font-weight:700; }
+
+/* Form Tutor merged column (vertical text) */
+.form-tutor {
+  background: #ffe599;
+  border: 1px solid #b08a00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* slight responsive behavior: horizontal scroll if the screen is narrow */
+@media (max-width: 1280px) {
+  .timetable-wrapper { overflow-x: auto; }
+}
+
+
